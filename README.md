@@ -172,13 +172,18 @@ new foo() instanceof foo;
 
 16. What is the difference between a reference type variable and a value type variable?
 	A value type actually holds the value of the variable, but a reference type variable just references back to the value of the variable.
-	
+
 17. How would you describe the difference between class-based inheritance and prototypical inheritance?
+	Class inheritance is a description of the object to be created and a prototype is a working object instance. Objects inherit directly from other objects.
 
 ## ES6 Questions
 
 1. What is the difference between JavaScript and ECMAScript?
+	ECMAScript is the standardized version of JavaScript. When JS was first developed by netscape there were different versions for different browsers, EScript standardized everything.
+
 2. What do `const` and `let` do? And when would we use them?
+	const creates an immutable binding. 
+
 3. How would you describe the difference between `function` and `function*`?
 4. When would you NOT use an arrow function in the place of a regular function expression?
 5. Refactor the following code to use an ES6 Template Literal.
@@ -209,6 +214,7 @@ new Promise((resolve, reject) => {
 ## Node.js Questions
 
 1. What is Node.js?
+	Node.js is a server-side platform built with javascript.
 2. What is an "Error-First" Callback?
 3. What is the Node.js Event Loop?
 4. Why might someone choose to use the Node.js Async single-threaded model over a more traditional multi-threaded model?
@@ -218,18 +224,35 @@ new Promise((resolve, reject) => {
 ## React.js Questions
 
 1. What makes React.js more efficient at updating the DOM?
+
 2. What is the difference between a Logical component and a Pure component?
 3. What happens when you call "setState" in React?
 4. What is the React method to create a component? Alternatively, how would you accomplish the same thing using ES6 classes?
 5. In which React lifecycle event would you make AJAX requests? And why?
 6. Why would you use `React.Children.map(props.children, () => )` instead of `props.children.map(() => )`?
 7. What is JSX?
+	JSX is a preprocessor step that adds XML syntax to JavaScript
 
 ## Internet/Network Questions
 
 1. What does TCP/IP stand for?
+	 Transmission Control Protocol/Internet Protocol
+
 2. Behind the scenes, how does HTTPS differ from HTTP?
+	HTTPS encrypts what is being sent so even it is intercepted, it cannot be read, while HTTP is not secure
+
 3. Define the general response status code categories.
+	100s: Informational
+	200s: Success
+	300s: Redirection
+	400s: Client error
+	500s: Server error
+
 4. What does DDOS stand for?
+	Distributed Denial of Service
+
 5. What is CORS? How does it work?
+	Cross Origin Resource Sharing. It allows resources to be requested from domains outside the first domain being served.
+
 6. What does REST stand for when we refer it in the context of a "RESTful API"?
+	Representational State Transer. A RESTful API means the client does not need to know anything about how the API is structured and that the server provides the information necessary for the browser to use the API.
